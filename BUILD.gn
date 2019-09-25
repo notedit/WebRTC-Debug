@@ -8,7 +8,10 @@ rtc_static_library("AppRTCMobile_lib") {
     # iOS must use WebRTC.framework which is dynamically linked.
     testonly = true
     sources = [
-      
+      "WebRTC-Debug/AppDelegate.h",
+      "WebRTC-Debug/AppDelegate.m",
+      "WebRTC-Debug/ViewController.h",
+      "WebRTC-Debug/ViewController.m"
     ]
 
     configs += [ "..:common_objc" ]
