@@ -1,10 +1,11 @@
 import("../webrtc.gni")
 
 
-import("//build/config/ios/rules.gni")
+if (is_ios) {
+  import("//build/config/ios/rules.gni")
+}
 
-
-rtc_static_library("AppRTCMobile_lib") {
+rtc_static_library("WebRTC-Debug_lib") {
     # iOS must use WebRTC.framework which is dynamically linked.
     testonly = true
     sources = [
