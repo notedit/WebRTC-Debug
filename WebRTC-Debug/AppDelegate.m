@@ -8,6 +8,16 @@
 
 #import "AppDelegate.h"
 
+
+#import <WebRTC/RTCFieldTrials.h>
+#import <WebRTC/RTCLogging.h>
+#import <WebRTC/RTCSSLAdapter.h>
+#import <WebRTC/RTCTracing.h>
+
+
+#import "ViewController.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +27,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    RTCInitializeSSL();
+    RTCSetupInternalTracer();
+    _window =  [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [_window makeKeyAndVisible];
+    
+    
+    ViewController *viewController = [[ViewController alloc] init];
+    
+    UINavigationController *root =
+    [[UINavigationController alloc] initWithRootViewController:viewController];
+    root.navigationBar.translucent = NO;
+    _window.rootViewController = root;
+    
+    
+    // In debug builds the default level is LS_INFO and in non-debug builds it is
+    // disabled. Continue to log to console in non-debug builds, but only
+    // warnings and errors.
+    //RTCSetMinDebugLogLevel(RTCLoggingSeverityWarning);
+    
+    
     return YES;
 }
 
@@ -45,6 +76,9 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    RTCShutdownInternalTracer();
+    RTCCleanupSSL();
 }
 
 
