@@ -1,0 +1,46 @@
+import("../webrtc.gni")
+
+
+import("//build/config/ios/rules.gni")
+
+
+rtc_static_library("AppRTCMobile_lib") {
+    # iOS must use WebRTC.framework which is dynamically linked.
+    testonly = true
+    sources = [
+      
+    ]
+
+    configs += [ "..:common_objc" ]
+
+    deps = [
+      "../sdk:framework_objc+link",
+      "../sdk:ios_framework_bundle",
+    ]
+
+    libs = [ "AVFoundation.framework" ]
+}
+
+ios_app_bundle("WebRTC-Debug") {
+  testonly = true
+  sources = [
+    "WebRTC-Debug/main.m",
+  ]
+
+  info_plist = "Info.plist"
+
+  configs += [ "..:common_config" ]
+  public_configs = [ "..:common_inherited_config" ]
+
+  deps = [
+    # ":AppRTCMobile_ios_bundle_data",
+    ":WebRTC-Debug_lib",
+    "../sdk:framework_objc",
+    "../sdk:ios_framework_bundle",
+  ]
+
+}
+
+
+
+
