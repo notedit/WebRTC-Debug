@@ -12,7 +12,9 @@ rtc_static_library("WebRTC-Debug_lib") {
       "WebRTC-Debug/AppDelegate.h",
       "WebRTC-Debug/AppDelegate.m",
       "WebRTC-Debug/ViewController.h",
-      "WebRTC-Debug/ViewController.m"
+      "WebRTC-Debug/ViewController.m",
+      "WebRTC-Debug/NetUtils.h",
+      "WebRTC-Debug/NetUtils.m"
     ]
 
     configs += [ "..:common_objc" ]
@@ -37,7 +39,6 @@ ios_app_bundle("WebRTC-Debug") {
   public_configs = [ "..:common_inherited_config" ]
 
   deps = [
-    # ":AppRTCMobile_ios_bundle_data",
     ":WebRTC-Debug_lib",
     "../sdk:framework_objc",
     "../sdk:ios_framework_bundle",

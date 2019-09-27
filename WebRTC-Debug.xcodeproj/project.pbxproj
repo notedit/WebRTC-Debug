@@ -14,6 +14,7 @@
 		F0516F8E233B5AE80008A0FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0516F8C233B5AE80008A0FA /* LaunchScreen.storyboard */; };
 		F0516F91233B5AE80008A0FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0516F90233B5AE80008A0FA /* main.m */; };
 		F0516F98233B62120008A0FA /* BUILD.gn in Resources */ = {isa = PBXBuildFile; fileRef = F0516F97233B62120008A0FA /* BUILD.gn */; };
+		F0516F9B233DDA2D0008A0FA /* NetUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F0516F9A233DDA2D0008A0FA /* NetUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		F0516F8F233B5AE80008A0FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0516F90233B5AE80008A0FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0516F97233B62120008A0FA /* BUILD.gn */ = {isa = PBXFileReference; lastKnownFileType = text; path = BUILD.gn; sourceTree = "<group>"; };
+		F0516F99233DDA2D0008A0FA /* NetUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetUtils.h; sourceTree = "<group>"; };
+		F0516F9A233DDA2D0008A0FA /* NetUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 				F0516F8C233B5AE80008A0FA /* LaunchScreen.storyboard */,
 				F0516F8F233B5AE80008A0FA /* Info.plist */,
 				F0516F90233B5AE80008A0FA /* main.m */,
+				F0516F99233DDA2D0008A0FA /* NetUtils.h */,
+				F0516F9A233DDA2D0008A0FA /* NetUtils.m */,
 			);
 			path = "WebRTC-Debug";
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0516F86233B5AE60008A0FA /* ViewController.m in Sources */,
+				F0516F9B233DDA2D0008A0FA /* NetUtils.m in Sources */,
 				F0516F91233B5AE80008A0FA /* main.m in Sources */,
 				F0516F83233B5AE60008A0FA /* AppDelegate.m in Sources */,
 			);
