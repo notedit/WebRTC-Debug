@@ -10,6 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#import <WebRTC/WebRTC.h>
+
+
 @interface RTCStream : NSObject
 
 @end

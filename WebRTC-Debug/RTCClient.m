@@ -8,6 +8,43 @@
 
 #import "RTCClient.h"
 
+
+
+@interface RTCClient()
+{
+    
+
+}
+
+
+
+@end
+
+
 @implementation RTCClient
+
+
+-(instancetype) initWithDelegate:(id<RTCClientDelegate>)delegate
+{
+    
+    if (self = [super init]) {
+        _delegate = delegate;
+    }
+    
+    return self;
+}
+
+- (void) publish:(RTCStream*) stream
+{
+    
+    
+}
+
+- (void) subscribe:(NSString*) streamId
+{
+    
+    
+    
+}
 
 @end
