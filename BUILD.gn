@@ -14,7 +14,11 @@ rtc_static_library("WebRTC-Debug_lib") {
       "WebRTC-Debug/ViewController.h",
       "WebRTC-Debug/ViewController.m",
       "WebRTC-Debug/NetUtils.h",
-      "WebRTC-Debug/NetUtils.m"
+      "WebRTC-Debug/NetUtils.m",
+      "WebRTC-Debug/RTCClient.h",
+      "WebRTC-Debug/RTCClient.m",
+      "WebRTC-Debug/RTCStream.h",
+      "WebRTC-Debug/RTCStream.m"
     ]
 
     configs += [ "..:common_objc" ]

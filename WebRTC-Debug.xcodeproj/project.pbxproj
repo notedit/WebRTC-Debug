@@ -15,6 +15,8 @@
 		F0516F91233B5AE80008A0FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0516F90233B5AE80008A0FA /* main.m */; };
 		F0516F98233B62120008A0FA /* BUILD.gn in Resources */ = {isa = PBXBuildFile; fileRef = F0516F97233B62120008A0FA /* BUILD.gn */; };
 		F0516F9B233DDA2D0008A0FA /* NetUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F0516F9A233DDA2D0008A0FA /* NetUtils.m */; };
+		F0516F9E233DDF360008A0FA /* RTCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F0516F9D233DDF360008A0FA /* RTCClient.m */; };
+		F0516FA1233DDF540008A0FA /* RTCStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F0516FA0233DDF540008A0FA /* RTCStream.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		F0516F97233B62120008A0FA /* BUILD.gn */ = {isa = PBXFileReference; lastKnownFileType = text; path = BUILD.gn; sourceTree = "<group>"; };
 		F0516F99233DDA2D0008A0FA /* NetUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetUtils.h; sourceTree = "<group>"; };
 		F0516F9A233DDA2D0008A0FA /* NetUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetUtils.m; sourceTree = "<group>"; };
+		F0516F9C233DDF360008A0FA /* RTCClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCClient.h; sourceTree = "<group>"; };
+		F0516F9D233DDF360008A0FA /* RTCClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCClient.m; sourceTree = "<group>"; };
+		F0516F9F233DDF540008A0FA /* RTCStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCStream.h; sourceTree = "<group>"; };
+		F0516FA0233DDF540008A0FA /* RTCStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCStream.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				F0516F81233B5AE60008A0FA /* AppDelegate.h */,
 				F0516F82233B5AE60008A0FA /* AppDelegate.m */,
 				F0516F84233B5AE60008A0FA /* ViewController.h */,
+				F0516F9C233DDF360008A0FA /* RTCClient.h */,
+				F0516F9D233DDF360008A0FA /* RTCClient.m */,
+				F0516F9F233DDF540008A0FA /* RTCStream.h */,
+				F0516FA0233DDF540008A0FA /* RTCStream.m */,
 				F0516F85233B5AE60008A0FA /* ViewController.m */,
 				F0516F87233B5AE60008A0FA /* Main.storyboard */,
 				F0516F8A233B5AE80008A0FA /* Assets.xcassets */,
@@ -151,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0516F86233B5AE60008A0FA /* ViewController.m in Sources */,
+				F0516FA1233DDF540008A0FA /* RTCStream.m in Sources */,
 				F0516F9B233DDA2D0008A0FA /* NetUtils.m in Sources */,
 				F0516F91233B5AE80008A0FA /* main.m in Sources */,
+				F0516F9E233DDF360008A0FA /* RTCClient.m in Sources */,
 				F0516F83233B5AE60008A0FA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
